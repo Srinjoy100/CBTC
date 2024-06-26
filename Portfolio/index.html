@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(22, 6, 36);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 65px;
+            background-color: rgb(43, 17, 67);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            cursor: pointer;
+            color: rgb(182, 143, 219);
+        }
+
+        main hr {
+            background-color: mediumslateblue;
+            border: 0;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 1.7rem;
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-around;
+            margin: 70px 0;
+            align-items: center;
+        }
+
+        .first>div {
+            width: 40%;
+        }
+
+        .lsec {
+
+            font-size: 40px;
+        }
+
+        .rsec img {
+            width: 75%;
+            margin: 40px 0;
+
+        }
+
+        .name {
+            color: gold;
+        }
+
+        #element {
+            color: gold;
+        }
+
+        .second {
+            max-width: 80vw;
+            margin: 50px auto;
+        }
+
+        .second h1 {
+            font-size: 40px;
+        }
+
+        .projects {
+            color: grey;
+            font-size: 22px;
+        }
+
+        .projects-section {
+            margin: 20px 0;
+        }
+
+        .projects-section ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .projects-section h2 {
+            font-size: 28px;
+            color: gold;
+        }
+
+        .projects-section .project {
+            margin: 10px 0;
+        }
+
+        .projects-section .project h3 {
+            font-size: 24px;
+            color: white;
+        }
+
+        .projects-section .project h4 {
+            font-size: 20px;
+            color: grey;
+        }
+
+        .projects-section .project p {
+            font-size: 18px;
+            color: lightgrey;
+        }
+
+        .projects-section .project strong {
+            font-weight: bold;
+        }
+
+        .education {
+            max-width: 80vw;
+            margin: 50px auto;
+        }
+
+        .education h1 {
+            font-size: 40px;
+            color: gold;
+            margin-bottom: 20px;
+        }
+
+        .education-list ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .education-list li {
+            margin: 20px 0;
+        }
+
+        .education h2 {
+            font-size: 28px;
+            color: white;
+        }
+
+        .education h3 {
+            font-size: 22px;
+            color: grey;
+        }
+
+        .education p {
+            font-size: 18px;
+            color: lightgrey;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                My Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About Me</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+            <div class="lsec">Hi,My Name is <span class="name">Srinjoy Bhattacharjee,</span>
+                <div>
+                    I am a <span id="element"></span>
+                </div>
+
+            </div>
+            <div class="rsec">
+                <img src="Image.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="second" id="projects">
+            <span class="projects">My Projects So Far</span>
+            <h1>Experiences</h1>
+            <div class="projects-section">
+                <h2>Highlighted Projects</h2>
+                <ul>
+                    <li class="project">
+                        <h3>Weather App</h3>
+                        <h4>Technologies Used: HTML, CSS, JavaScript, OpenWeather API</h4>
+                        <p><strong>Description:</strong>A web application that provides current weather conditions and
+                            forecasts for any location. Features include search functionality, temperature conversion,
+                            and dynamic background images based on weather conditions.</p>
+                    </li>
+                    <li class="project">
+                        <h3>Simple Digital Clock</h3>
+                        <h4>Technologies Used:HTML, CSS, JavaScript </h4>
+                        <p><strong>Description:</strong>A digital clock that shows the current time and updates every
+                            second.</p>
+                    </li>
+                    <li class="project">
+                        <h3>Clone of Netflix</h3>
+                        <h4>Technologies Used:HTML, CSS, JavaScript</h4>
+                        <p><strong>Description:</strong>Create a web application that mimics the main features and
+                            appearance of Netflix. Users can browse movies and TV shows.</p>
+                    </li>
+                    <li class="project">
+                        <h3>To-Do List</h3>
+                        <h4>Technologies Used:HTML, CSS, JavaScript</h4>
+                        <p><strong>Description:</strong> A simple to-do list application where users can add, edit, mark
+                            as complete, and delete tasks. Includes a filter to show all tasks and completed tasks.</p>
+
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <section class="education" id="education">
+            <h1>Education</h1>
+            <div class="education-list">
+                <ul>
+                    <li>
+                        <h2>Currently Pursuing B-TECH in Computer Science & Engineering</h2>
+                        <h3>Heritage Institute of Technology</h3>
+                        <p>Year of Graduation: 2026</p>
+                    </li>
+                    <li>
+                        <h2>Higher Secondary </h2>
+                        <h3>Jadavpur Vidyapith</h3>
+                        <p>Year of Passing: 2021</p>
+                    </li>
+                    <li>
+                        <h2>Secondary</h2>
+                        <h3>Jadavpur Vidyapith</h3>
+                        <p>Year of Passing: 2019</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Website Designer', 'Machine Learning Enthusiast'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
