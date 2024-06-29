@@ -1,0 +1,463 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+:root {
+  --primary: rgb(205, 53, 53);
+  --secondary: rgba(12, 7, 25, 0.849);
+  --light: #2f3640;
+}
+header {
+  width: 100%;
+  height: 100vh;
+}
+.first {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 2px 0px 3px grey;
+  text-align: center;
+}
+.first .left {
+  flex-basis: 50%;
+  letter-spacing: 3px;
+  font-size: 30px;
+}
+.first .left a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: bolder;
+  margin: 0px 6px;
+}
+.first .right {
+  flex-basis: 50%;
+}
+.right i {
+  font-size: 25px;
+  margin: 0px 15px;
+  background: var(--primary);
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+.first .right i:hover {
+  background: var(--secondary);
+}
+.second {
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.second .secondl,
+.second .mid,
+.second .secondr {
+  flex-basis: 33.33%;
+  margin: auto;
+  cursor: pointer;
+}
+.second .secondl i {
+  margin-left: 15px;
+}
+
+.second .mid h1 {
+  color: rgb(184, 20, 42);
+  font-size: 2rem;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+.second .mid p {
+  color: black;
+  font-size: 1.2rem;
+  margin: 10px;
+  font-weight: bolder;
+}
+
+.second .secondr i {
+  margin-right: 15px;
+}
+.third {
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+}
+.third ul {
+  list-style: none;
+  text-align: center;
+}
+.third ul li {
+  display: inline-block;
+  width: 150px;
+  position: relative;
+  z-index: 99;
+}
+
+.third ul li a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 400;
+  display: block;
+}
+.third ul li a:hover {
+  color: var(--secondary);
+}
+.third ul li i {
+  color: #2f3640;
+  margin: 0px 5px;
+}
+.third ul ul {
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  display: none;
+}
+.third ul ul li {
+  background-color: white;
+  border-bottom: 1px solid var(--primary);
+}
+.third ul li:hover > ul {
+  display: block;
+}
+.feature {
+  width: 100%;
+  height: 60vh;
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url("bg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.text {
+  max-width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  color: white;
+  font-size: 2rem;
+  letter-spacing: 4px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.text button {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background-color: var(--primary);
+  margin: 20px 0px;
+  color: white;
+}
+.next {
+  padding: 50px 100px;
+}
+.product h1 {
+  color: var(--primary);
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.product {
+  text-align: center;
+}
+.product h1 span {
+  color: var(--secondary);
+}
+.product p {
+  color: gray;
+  margin: 15px 0px;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+.container .cards {
+  flex-basis: 20%;
+  padding: 0.8rem;
+  position: relative;
+}
+.cards img {
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+.container {
+  cursor: pointer;
+  margin: 4rem 0;
+}
+.cards i {
+  color: goldenrod;
+  margin: 10px 0px;
+}
+.cards button {
+  color: white;
+  background: var(--secondary);
+  margin-top: 15px;
+  border: none;
+  outline: none;
+  padding: 5px 20px;
+}
+.cards:hover img,
+.cards:hover h1 {
+  width: 75%;
+  color: var(--primary);
+}
+.trends {
+  padding: 50px 90px;
+  background-color: rgba(22, 21, 21, 0.073);
+}
+.trends .swiper {
+  width: 100%;
+  padding: 50px;
+}
+
+.trends .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+}
+
+.trends .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+footer {
+  background-color: #8e060f;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  
+}
+footer div {
+  flex-basis: 33.33%;
+  padding: 2rem;
+}
+footer h1 {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+}
+footer p {
+  font-size: 1rem;
+}
+footer i {
+  margin: 0px 5px;
+}
+#navbar{
+    display: none;
+}
+#menu{
+    display: none;
+}
+@media only screen and (max-width: 770px) {
+  .first {
+    position: relative;
+    z-index: 3;
+    background: white;
+  }
+  .right i {
+    font-size: 15px;
+    margin: 0px 5px;
+  }
+  .second {
+    height: 80px;
+    width: 100%;
+  }
+  .second .secondl i {
+    margin-left: 0px;
+  }
+  .second .mid h1 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  .second .mid p {
+    color: black;
+    font-size: 10px;
+    margin: 10px;
+    font-weight: bolder;
+  }
+
+  .second .secondr i {
+    margin-right: 15px;
+  }
+  .third {
+    display: none;
+  }
+  .feature {
+    background-attachment: fixed;
+  }
+  .next {
+    padding: 0px 50px;
+  }
+  .product h1 {
+    color: var(--primary);
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .product {
+    text-align: center;
+  }
+  .product h1 span {
+    color: var(--secondary);
+  }
+  .product p {
+    color: gray;
+    margin: 15px 0px;
+  }
+  .container {
+    margin: 2rem 0;
+  }
+  .container .cards {
+    flex-basis: 100%;
+
+    text-align: center;
+  }
+  .cards img {
+    width: 100%;
+    transition: 0.5s ease-in-out;
+  }
+  .container {
+    cursor: pointer;
+    margin: 4rem 0;
+  }
+  .cards i {
+    color: goldenrod;
+    margin: 10px 0px;
+  }
+  .cards button {
+    color: white;
+    background: var(--secondary);
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    padding: 5px 20px;
+  }
+  .trends {
+    padding: 20px 50px;
+  }
+ 
+  .trends .swiper-slide {
+    width: 300px;
+    height: 300px;
+  }
+  footer {
+    background-color: #8e060f;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    
+  }
+  footer div {
+    flex-basis: 50%;
+    margin:10px 0px;
+  }
+ #navbar{
+    display: block;
+ }
+ #menu{
+    display: block;
+    position: absolute;
+    top:50%;
+    right:0%;
+    transform: translate(0%,-50%);
+    z-index: 99;
+    background-color: var(--primary);
+    color:white;
+    font-size: 2rem;
+    padding: 20px 10px;
+    animation: animate 5s ease infinite;
+ }
+ @keyframes animate{
+    0%{
+        background-color: var(--secondary);
+    }
+    100%{
+        background-color: var(--primary);
+    }
+}
+.product h1{
+  text-align: left;
+}
+#navbar {
+    width: 0px;
+    height: 100vh;
+   
+    position: absolute;
+    z-index: 3;
+    top:0;
+    left:0;
+    background-color:#2f3640;
+    padding-top: 70px;
+    display: block;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+  }
+  #navbar ul {
+    list-style: none;
+   ;
+  }
+  #navbar ul li {
+    display: block;
+    width: 200px;
+    position: relative;
+    z-index: 99;
+    margin:10px 20px;
+  }
+  
+  #navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    display: block;
+    font-size: 20px;
+    padding:10px 20px;
+  }
+  #navbar ul li a:hover {
+    color: var(--secondary);
+  }
+  #navbar ul li i {
+    color:white;
+    margin: 0px 5px;
+  }
+  #navbar ul ul {
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    display: none;
+  }
+  #navbar ul ul li {
+    
+    border-bottom: 1px solid white;
+  }
+  #navbar ul li:hover > ul {
+    display: block;
+  }
+}
